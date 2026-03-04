@@ -1,4 +1,4 @@
-This is my back-of-the-napkin design plan for the agent harness called 'Bridge'. Not married to that name, the idea behind it is that the human's interface is like the bridge of a ship. All vital controls and information present, with the ability to leave the main display and drill into various aspects of the system.
+This is my back-of-the-napkin design plan for the agent harness called 'Bridge'. Not married to that name, the idea behind it is that the human's interface is like the bridge of a ship. All vital controls and information present, with the ability to leave the main display and drill into various aspects of the system, or just plug in high level project goals and then let the system run until those goals are met.
 
 ## Core Packages
 

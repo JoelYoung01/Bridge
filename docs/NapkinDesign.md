@@ -1,4 +1,10 @@
-This is my back-of-the-napkin design plan for the agent harness called 'Bridge'. Not married to that name, the idea behind it is that the human's interface is like the bridge of a ship. All vital controls and information present, with the ability to leave the main display and drill into various aspects of the system, or just plug in high level project goals and then let the system run until those goals are met.
+# Bridge Harness - Napkin Design
+
+This is my back-of-the-napkin design plan for the agent harness called 'Bridge'. Not married to that name, the idea behind it is that the human's interface is like the bridge of a ship. All vital controls and information present, with the ability to leave the main display and drill into various aspects of the system. Or leave the system on autopilot, the entire system should be able to handle the entire pipeline autonomously.
+
+## The Pipeline
+
+The pipeline refers to the entire flow of work. First, an event occurs. This could be a feature request from the Bridge UI, a bug report, a PR to review, etc. This event gets traiged by an LLM and tagged, eventually landing in it's respective queue to be handled by a specific type of role as a ticket. The queues are for code-writing agents. The respective agents will be spun up to handle the ticket, and write code addressing the ticket. When the agent has completed the chunk of work, it will send it's changes through review, testing, and finally merging. Definition of Done will be when the work completed in the ticket is deployed to Production. The merging and deployment process will need to be linear, so the merge reviews will be serial and queued, and handled by a single entity. The deployments should be polled for status, and tagged with the ticket details. That way, when a deployment fails, the resulting ticket from the failure can be created with the original work context accessible.
 
 ## Core Packages
 

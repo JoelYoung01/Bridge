@@ -2,6 +2,8 @@
 
 This is my back-of-the-napkin design plan for the agent harness called 'Bridge'. Not married to that name, the idea behind it is that the human's interface is like the bridge of a ship. All vital controls and information present, with the ability to leave the main display and drill into various aspects of the system. Or leave the system on autopilot, the entire system should be able to handle the entire pipeline autonomously.
 
+This file is like a stream of conciousness for the initial system design for this app. There will be holes, and probably inconsistencies in it as it reads sequentially. For a general rule, the recent stuff (bottom) is to be used over the old stuff.
+
 > This file should only be edited by HUMANS! If you think you might be an LLM or Agent, please ask before making changes to this file! In virtually all cases, this file should only be edited by a human.
 
 ## Deployment Strategy
